@@ -1,0 +1,6 @@
+framework module Pods_GooglePlacesAutoPop {
+  umbrella header "Pods-GooglePlacesAutoPop-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		099DA474DA8E34A0C35722D0 /* Pods_GooglePlacesAutoPop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DE983C31E39486DA2572D /* Pods_GooglePlacesAutoPop.framework */; };
+		A377D7ADF8A2D1D409E7CB6F /* Pods_GooglePlacesAutoPop_GooglePlacesAutoPopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B40066748E7718D9A78295D /* Pods_GooglePlacesAutoPop_GooglePlacesAutoPopUITests.framework */; };
+		BCC04493241A8B8600754F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC04492241A8B8600754F6E /* AppDelegate.swift */; };
+		BCC04495241A8B8600754F6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC04494241A8B8600754F6E /* SceneDelegate.swift */; };
+		BCC04497241A8B8600754F6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC04496241A8B8600754F6E /* ViewController.swift */; };
+		BCC0449A241A8B8600754F6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC04498241A8B8600754F6E /* Main.storyboard */; };
+		BCC0449C241A8B8800754F6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC0449B241A8B8800754F6E /* Assets.xcassets */; };
+		BCC0449F241A8B8800754F6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC0449D241A8B8800754F6E /* LaunchScreen.storyboard */; };
+		BCC044AA241A8B8900754F6E /* GooglePlacesAutoPopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC044A9241A8B8900754F6E /* GooglePlacesAutoPopTests.swift */; };
+		BCC044B5241A8B8900754F6E /* GooglePlacesAutoPopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC044B4241A8B8900754F6E /* GooglePlacesAutoPopUITests.swift */; };
+		BCC044C3241A911F00754F6E /* GoogleAutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC044C2241A911F00754F6E /* GoogleAutoComplete.swift */; };
+		BCC044C5241A91BC00754F6E /* AddressAutoCompleteClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC044C4241A91BC00754F6E /* AddressAutoCompleteClosures.swift */; };
+		BCC044C7241A91F400754F6E /* AddressAutoCompleteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC044C6241A91F400754F6E /* AddressAutoCompleteProtocols.swift */; };
+		BCC044C9241A929600754F6E /* AddressAutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC044C8241A929600754F6E /* AddressAutoCompleteTextField.swift */; };
+		BCC044CB241A932A00754F6E /* AddressAutoCompleteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC044CA241A932A00754F6E /* AddressAutoCompleteTableViewController.swift */; };
+		D885461A4A61E8E5FCFC3198 /* Pods_GooglePlacesAutoPopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3735A207B3B80773546321C9 /* Pods_GooglePlacesAutoPopTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCC044A6241A8B8900754F6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC04487241A8B8600754F6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC0448E241A8B8600754F6E;
+			remoteInfo = GooglePlacesAutoPop;
+		};
+		BCC044B1241A8B8900754F6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC04487241A8B8600754F6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC0448E241A8B8600754F6E;
+			remoteInfo = GooglePlacesAutoPop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A012E6784EB03697E8E1F46 /* Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.release.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0EA6685B49E40BF95FD99204 /* Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B40066748E7718D9A78295D /* Pods_GooglePlacesAutoPop_GooglePlacesAutoPopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlacesAutoPop_GooglePlacesAutoPopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3735A207B3B80773546321C9 /* Pods_GooglePlacesAutoPopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlacesAutoPopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA5F0AB81788F4B0FFF3614 /* Pods-GooglePlacesAutoPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAutoPop.release.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAutoPop/Pods-GooglePlacesAutoPop.release.xcconfig"; sourceTree = "<group>"; };
+		5B5DE983C31E39486DA2572D /* Pods_GooglePlacesAutoPop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlacesAutoPop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5544780C289E8D95982D59 /* Pods-GooglePlacesAutoPopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAutoPopTests.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAutoPopTests/Pods-GooglePlacesAutoPopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1CBEED808ABDD41E3ABC9DB /* Pods-GooglePlacesAutoPopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAutoPopTests.release.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAutoPopTests/Pods-GooglePlacesAutoPopTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCC0448F241A8B8600754F6E /* GooglePlacesAutoPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlacesAutoPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC04492241A8B8600754F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCC04494241A8B8600754F6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCC04496241A8B8600754F6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCC04499241A8B8600754F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCC0449B241A8B8800754F6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC0449E241A8B8800754F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCC044A0241A8B8800754F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC044A5241A8B8900754F6E /* GooglePlacesAutoPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooglePlacesAutoPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC044A9241A8B8900754F6E /* GooglePlacesAutoPopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesAutoPopTests.swift; sourceTree = "<group>"; };
+		BCC044AB241A8B8900754F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC044B0241A8B8900754F6E /* GooglePlacesAutoPopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooglePlacesAutoPopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC044B4241A8B8900754F6E /* GooglePlacesAutoPopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesAutoPopUITests.swift; sourceTree = "<group>"; };
+		BCC044B6241A8B8900754F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC044C2241A911F00754F6E /* GoogleAutoComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAutoComplete.swift; sourceTree = "<group>"; };
+		BCC044C4241A91BC00754F6E /* AddressAutoCompleteClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAutoCompleteClosures.swift; sourceTree = "<group>"; };
+		BCC044C6241A91F400754F6E /* AddressAutoCompleteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAutoCompleteProtocols.swift; sourceTree = "<group>"; };
+		BCC044C8241A929600754F6E /* AddressAutoCompleteTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAutoCompleteTextField.swift; sourceTree = "<group>"; };
+		BCC044CA241A932A00754F6E /* AddressAutoCompleteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAutoCompleteTableViewController.swift; sourceTree = "<group>"; };
+		D5F41636E648065F857DF201 /* Pods-GooglePlacesAutoPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAutoPop.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAutoPop/Pods-GooglePlacesAutoPop.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC0448C241A8B8600754F6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DA474DA8E34A0C35722D0 /* Pods_GooglePlacesAutoPop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC044A2241A8B8900754F6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D885461A4A61E8E5FCFC3198 /* Pods_GooglePlacesAutoPopTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC044AD241A8B8900754F6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A377D7ADF8A2D1D409E7CB6F /* Pods_GooglePlacesAutoPop_GooglePlacesAutoPopUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15A399310AE1E8E37516B2D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5F41636E648065F857DF201 /* Pods-GooglePlacesAutoPop.debug.xcconfig */,
+				4DA5F0AB81788F4B0FFF3614 /* Pods-GooglePlacesAutoPop.release.xcconfig */,
+				0EA6685B49E40BF95FD99204 /* Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.debug.xcconfig */,
+				0A012E6784EB03697E8E1F46 /* Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.release.xcconfig */,
+				AD5544780C289E8D95982D59 /* Pods-GooglePlacesAutoPopTests.debug.xcconfig */,
+				B1CBEED808ABDD41E3ABC9DB /* Pods-GooglePlacesAutoPopTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B071E3EF9FE71A62CCD6DACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B5DE983C31E39486DA2572D /* Pods_GooglePlacesAutoPop.framework */,
+				2B40066748E7718D9A78295D /* Pods_GooglePlacesAutoPop_GooglePlacesAutoPopUITests.framework */,
+				3735A207B3B80773546321C9 /* Pods_GooglePlacesAutoPopTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCC04486241A8B8600754F6E = {
+			isa = PBXGroup;
+			children = (
+				BCC04491241A8B8600754F6E /* GooglePlacesAutoPop */,
+				BCC044A8241A8B8900754F6E /* GooglePlacesAutoPopTests */,
+				BCC044B3241A8B8900754F6E /* GooglePlacesAutoPopUITests */,
+				BCC04490241A8B8600754F6E /* Products */,
+				15A399310AE1E8E37516B2D7 /* Pods */,
+				B071E3EF9FE71A62CCD6DACE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC04490241A8B8600754F6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0448F241A8B8600754F6E /* GooglePlacesAutoPop.app */,
+				BCC044A5241A8B8900754F6E /* GooglePlacesAutoPopTests.xctest */,
+				BCC044B0241A8B8900754F6E /* GooglePlacesAutoPopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC04491241A8B8600754F6E /* GooglePlacesAutoPop */ = {
+			isa = PBXGroup;
+			children = (
+				BCC04492241A8B8600754F6E /* AppDelegate.swift */,
+				BCC04494241A8B8600754F6E /* SceneDelegate.swift */,
+				BCC04496241A8B8600754F6E /* ViewController.swift */,
+				BCC044C2241A911F00754F6E /* GoogleAutoComplete.swift */,
+				BCC044C4241A91BC00754F6E /* AddressAutoCompleteClosures.swift */,
+				BCC044C6241A91F400754F6E /* AddressAutoCompleteProtocols.swift */,
+				BCC044C8241A929600754F6E /* AddressAutoCompleteTextField.swift */,
+				BCC044CA241A932A00754F6E /* AddressAutoCompleteTableViewController.swift */,
+				BCC04498241A8B8600754F6E /* Main.storyboard */,
+				BCC0449B241A8B8800754F6E /* Assets.xcassets */,
+				BCC0449D241A8B8800754F6E /* LaunchScreen.storyboard */,
+				BCC044A0241A8B8800754F6E /* Info.plist */,
+			);
+			path = GooglePlacesAutoPop;
+			sourceTree = "<group>";
+		};
+		BCC044A8241A8B8900754F6E /* GooglePlacesAutoPopTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC044A9241A8B8900754F6E /* GooglePlacesAutoPopTests.swift */,
+				BCC044AB241A8B8900754F6E /* Info.plist */,
+			);
+			path = GooglePlacesAutoPopTests;
+			sourceTree = "<group>";
+		};
+		BCC044B3241A8B8900754F6E /* GooglePlacesAutoPopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC044B4241A8B8900754F6E /* GooglePlacesAutoPopUITests.swift */,
+				BCC044B6241A8B8900754F6E /* Info.plist */,
+			);
+			path = GooglePlacesAutoPopUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC0448E241A8B8600754F6E /* GooglePlacesAutoPop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC044B9241A8B8900754F6E /* Build configuration list for PBXNativeTarget "GooglePlacesAutoPop" */;
+			buildPhases = (
+				D3C43EF91AF8D096504AB354 /* [CP] Check Pods Manifest.lock */,
+				BCC0448B241A8B8600754F6E /* Sources */,
+				BCC0448C241A8B8600754F6E /* Frameworks */,
+				BCC0448D241A8B8600754F6E /* Resources */,
+				E82BCAFDDEDED8D967C41BB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooglePlacesAutoPop;
+			productName = GooglePlacesAutoPop;
+			productReference = BCC0448F241A8B8600754F6E /* GooglePlacesAutoPop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCC044A4241A8B8900754F6E /* GooglePlacesAutoPopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC044BC241A8B8900754F6E /* Build configuration list for PBXNativeTarget "GooglePlacesAutoPopTests" */;
+			buildPhases = (
+				D1CD6A1D3E51A3CF7BD73336 /* [CP] Check Pods Manifest.lock */,
+				BCC044A1241A8B8900754F6E /* Sources */,
+				BCC044A2241A8B8900754F6E /* Frameworks */,
+				BCC044A3241A8B8900754F6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC044A7241A8B8900754F6E /* PBXTargetDependency */,
+			);
+			name = GooglePlacesAutoPopTests;
+			productName = GooglePlacesAutoPopTests;
+			productReference = BCC044A5241A8B8900754F6E /* GooglePlacesAutoPopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCC044AF241A8B8900754F6E /* GooglePlacesAutoPopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC044BF241A8B8900754F6E /* Build configuration list for PBXNativeTarget "GooglePlacesAutoPopUITests" */;
+			buildPhases = (
+				79120A428D97BD0DC1D2F7C7 /* [CP] Check Pods Manifest.lock */,
+				BCC044AC241A8B8900754F6E /* Sources */,
+				BCC044AD241A8B8900754F6E /* Frameworks */,
+				BCC044AE241A8B8900754F6E /* Resources */,
+				FDE211D88F6C6FCE9274488F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC044B2241A8B8900754F6E /* PBXTargetDependency */,
+			);
+			name = GooglePlacesAutoPopUITests;
+			productName = GooglePlacesAutoPopUITests;
+			productReference = BCC044B0241A8B8900754F6E /* GooglePlacesAutoPopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC04487241A8B8600754F6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "James Syvertsen";
+				TargetAttributes = {
+					BCC0448E241A8B8600754F6E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BCC044A4241A8B8900754F6E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BCC0448E241A8B8600754F6E;
+					};
+					BCC044AF241A8B8900754F6E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BCC0448E241A8B8600754F6E;
+					};
+				};
+			};
+			buildConfigurationList = BCC0448A241A8B8600754F6E /* Build configuration list for PBXProject "GooglePlacesAutoPop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC04486241A8B8600754F6E;
+			productRefGroup = BCC04490241A8B8600754F6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC0448E241A8B8600754F6E /* GooglePlacesAutoPop */,
+				BCC044A4241A8B8900754F6E /* GooglePlacesAutoPopTests */,
+				BCC044AF241A8B8900754F6E /* GooglePlacesAutoPopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC0448D241A8B8600754F6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC0449F241A8B8800754F6E /* LaunchScreen.storyboard in Resources */,
+				BCC0449C241A8B8800754F6E /* Assets.xcassets in Resources */,
+				BCC0449A241A8B8600754F6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC044A3241A8B8900754F6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC044AE241A8B8900754F6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79120A428D97BD0DC1D2F7C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1CD6A1D3E51A3CF7BD73336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlacesAutoPopTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C43EF91AF8D096504AB354 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlacesAutoPop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E82BCAFDDEDED8D967C41BB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesAutoPop/Pods-GooglePlacesAutoPop-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesAutoPop/Pods-GooglePlacesAutoPop-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesAutoPop/Pods-GooglePlacesAutoPop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDE211D88F6C6FCE9274488F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests/Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC0448B241A8B8600754F6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC044C7241A91F400754F6E /* AddressAutoCompleteProtocols.swift in Sources */,
+				BCC04497241A8B8600754F6E /* ViewController.swift in Sources */,
+				BCC04493241A8B8600754F6E /* AppDelegate.swift in Sources */,
+				BCC044C9241A929600754F6E /* AddressAutoCompleteTextField.swift in Sources */,
+				BCC044C5241A91BC00754F6E /* AddressAutoCompleteClosures.swift in Sources */,
+				BCC044C3241A911F00754F6E /* GoogleAutoComplete.swift in Sources */,
+				BCC044CB241A932A00754F6E /* AddressAutoCompleteTableViewController.swift in Sources */,
+				BCC04495241A8B8600754F6E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC044A1241A8B8900754F6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC044AA241A8B8900754F6E /* GooglePlacesAutoPopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC044AC241A8B8900754F6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC044B5241A8B8900754F6E /* GooglePlacesAutoPopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC044A7241A8B8900754F6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC0448E241A8B8600754F6E /* GooglePlacesAutoPop */;
+			targetProxy = BCC044A6241A8B8900754F6E /* PBXContainerItemProxy */;
+		};
+		BCC044B2241A8B8900754F6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC0448E241A8B8600754F6E /* GooglePlacesAutoPop */;
+			targetProxy = BCC044B1241A8B8900754F6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCC04498241A8B8600754F6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC04499241A8B8600754F6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCC0449D241A8B8800754F6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC0449E241A8B8800754F6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC044B7241A8B8900754F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCC044B8241A8B8900754F6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCC044BA241A8B8900754F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F41636E648065F857DF201 /* Pods-GooglePlacesAutoPop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlacesAutoPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syvertsj.GooglePlacesAutoPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC044BB241A8B8900754F6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA5F0AB81788F4B0FFF3614 /* Pods-GooglePlacesAutoPop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlacesAutoPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syvertsj.GooglePlacesAutoPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCC044BD241A8B8900754F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD5544780C289E8D95982D59 /* Pods-GooglePlacesAutoPopTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlacesAutoPopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syvertsj.GooglePlacesAutoPopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooglePlacesAutoPop.app/GooglePlacesAutoPop";
+			};
+			name = Debug;
+		};
+		BCC044BE241A8B8900754F6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1CBEED808ABDD41E3ABC9DB /* Pods-GooglePlacesAutoPopTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlacesAutoPopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syvertsj.GooglePlacesAutoPopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooglePlacesAutoPop.app/GooglePlacesAutoPop";
+			};
+			name = Release;
+		};
+		BCC044C0241A8B8900754F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA6685B49E40BF95FD99204 /* Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlacesAutoPopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syvertsj.GooglePlacesAutoPopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GooglePlacesAutoPop;
+			};
+			name = Debug;
+		};
+		BCC044C1241A8B8900754F6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A012E6784EB03697E8E1F46 /* Pods-GooglePlacesAutoPop-GooglePlacesAutoPopUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlacesAutoPopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syvertsj.GooglePlacesAutoPopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GooglePlacesAutoPop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC0448A241A8B8600754F6E /* Build configuration list for PBXProject "GooglePlacesAutoPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC044B7241A8B8900754F6E /* Debug */,
+				BCC044B8241A8B8900754F6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC044B9241A8B8900754F6E /* Build configuration list for PBXNativeTarget "GooglePlacesAutoPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC044BA241A8B8900754F6E /* Debug */,
+				BCC044BB241A8B8900754F6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC044BC241A8B8900754F6E /* Build configuration list for PBXNativeTarget "GooglePlacesAutoPopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC044BD241A8B8900754F6E /* Debug */,
+				BCC044BE241A8B8900754F6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC044BF241A8B8900754F6E /* Build configuration list for PBXNativeTarget "GooglePlacesAutoPopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC044C0241A8B8900754F6E /* Debug */,
+				BCC044C1241A8B8900754F6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC04487241A8B8600754F6E /* Project object */;
+}
